@@ -6,7 +6,7 @@ const BioPage = () => {
       <div className="flex w-full flex-col items-center gap-10">
         <div className="relative w-full overflow-hidden">
           <Image
-            src="/dts-assets/dts-shooting-0671.jpg_compressed.JPEG"
+            src="/dts-assets/0671.JPEG"
             alt="Drown The Sun performing live"
             width={1600}
             height={900}
