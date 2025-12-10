@@ -48,11 +48,6 @@ const ShowCard: React.FC<ShowCardProps> = ({ show, isPast = false }) => {
           <div className="h-full w-full bg-black" />
         )}
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/95" />
-        <div className="pointer-events-none absolute inset-0 flex items-end justify-end p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <div className="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/90 backdrop-blur-sm">
-            🔍 Preview
-          </div>
-        </div>
       </div>
 
       <div className="relative z-10 grid grid-cols-[auto,1fr] items-start gap-x-5 gap-y-3 px-5 py-6 md:grid-cols-[auto,1fr,auto] md:items-center md:gap-6 md:px-8 md:py-7">
