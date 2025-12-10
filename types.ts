@@ -3,7 +3,9 @@ export interface Show {
   date: string;
   venue: string;
   location: string;
-  isSoldOut: boolean;
+  isPast: boolean;
+  description?: string;
+  bannerUrl?: string;
 }
 
 export interface Release {

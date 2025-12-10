@@ -94,7 +94,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed inset-0 z-40 bg-background-dark/95 backdrop-blur-xl transition-transform duration-300 md:hidden ${
+        className={`fixed inset-0 z-40 bg-black/90 backdrop-blur-xl transition-transform duration-300 md:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ top: "80px" }}
@@ -127,7 +127,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-white/10 bg-black py-12">
       <div className="container mx-auto px-4 text-center">
-        <div className="flex gap-6 mt-12 text-center justify-center">
+        <div className="flex gap-6 mt-0 mb-6 text-center justify-center">
           {socials.map((social) => (
             <a
               key={social.name}
@@ -137,7 +137,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <svg>
+              <svg className="h-10 w-10">
                 <path d={social.svgPath} fill="currentColor" />
               </svg>
               <span className="sr-only">{social.name}</span>

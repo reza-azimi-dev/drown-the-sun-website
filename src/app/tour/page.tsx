@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import ShowCard from "@/components/ShowCard";
-import { PAST_SHOWS, TOUR_PAGE_SHOWS } from "@/constants";
+import { PAST_SHOWS, UPCOMING_SHOWS } from "@/constants";
 
 const TourPage = () => {
   return (
@@ -33,9 +33,16 @@ const TourPage = () => {
             Upcoming Shows
           </h2>
           <div className="flex flex-col gap-4">
-            {TOUR_PAGE_SHOWS.map((show) => (
-              <ShowCard key={show.id} show={show} />
-            ))}
+            {UPCOMING_SHOWS.length === 0 ? (
+              <div className="mx-auto w-full max-w-4xl rounded-2xl border border-white/10 bg-black/70 px-6 py-8 text-center text-white shadow-2xl backdrop-blur">
+                <p className="text-lg font-semibold uppercase tracking-[0.12em] text-white/70">
+                  No Upcoming Shows
+                </p>
+                <p className="mt-2 text-sm text-white/60">Check back soon for new dates.</p>
+              </div>
+            ) : (
+              UPCOMING_SHOWS.map((show) => <ShowCard key={show.id} show={show} />)
+            )}
           </div>
         </div>
 

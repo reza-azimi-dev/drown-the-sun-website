@@ -20,75 +20,85 @@ export const socials = [
     svgPath: "M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
   },
   {
+    name: "Apple",
+    href: "https://music.apple.com/de/artist/drown-the-sun/1356157060",
+    note: "Visuals and live cuts",
+    svgPath:
+      "M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z",
+  },
+  {
     name: "YouTube",
     href: "https://www.youtube.com/channel/UCLhT0cRde-LP89Va_jON7fA",
     note: "Visuals and live cuts",
     svgPath: "M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z",
   },
+  
 ];
 
 export const UPCOMING_SHOWS: Show[] = [
   {
-    id: "1",
-    date: "JUN 28, 2024",
-    venue: "The Viper Room",
-    location: "Los Angeles, CA",
-    isSoldOut: false,
-  },
-  {
-    id: "2",
-    date: "JUL 15, 2024",
-    venue: "Saint Vitus Bar",
-    location: "Brooklyn, NY",
-    isSoldOut: false,
-  },
-  {
-    id: "3",
-    date: "AUG 02, 2024",
-    venue: "The Metro",
-    location: "Chicago, IL",
-    isSoldOut: true,
-  },
-];
+    id: "20260206",
+    date: "FEB 06, 2026",
+    venue: "Z-Bau Roter Salon",
+    location: "Nürnberg, DE",
+    isPast: false,
+    description: `++++ FIRST SHOW OF THE 2026 ++++
 
-export const TOUR_PAGE_SHOWS: Show[] = [
-  {
-    id: "t1",
-    date: "JUNE 29, 2024",
-    venue: "The Underworld",
-    location: "Camden, London, UK",
-    isSoldOut: false,
-  },
-  {
-    id: "t2",
-    date: "JULY 15, 2024",
-    venue: "Hellfest Open Air",
-    location: "Clisson, France",
-    isSoldOut: false,
-  },
-  {
-    id: "t3",
-    date: "AUGUST 02, 2024",
-    venue: "Wacken Open Air",
-    location: "Wacken, Germany",
-    isSoldOut: false,
+      Wir haben die Ehre bei der "10+2 Years Anniversary Show" am 06.02.26 im @z.bau von @toryse_band dabei zu sein!
+
+      Ergänzt wird das gabze Line-up durch @revanchist_band und @twistoffate.de.
+
+      Kommt vorbei und habt Spaß mit uns 🔥🔥
+
+      Einlass: 18:30 Uhr
+      Beginn: 19:00 Uhr
+
+      VVK: 18€
+      AK: 20€
+
+      Ticktes gibt es über Eventim.`,
+    bannerUrl: "/dts-assets/banners/20260206.jpg",
   },
 ];
 
 export const PAST_SHOWS: Show[] = [
   {
-    id: "p1",
-    date: "MAY 10, 2024",
-    venue: "Whisky a Go Go",
-    location: "Los Angeles, CA, USA",
-    isSoldOut: true,
+    id: "20251018",
+    date: "OCT 18, 2025",
+    venue: "Jugendzentrum Feucht",
+    location: "Feucht, DE",
+    isPast: true,
+    description: "Drown The Sun will be performing live at Jugendzentrum Feucht as part of their 2025 tour. Join us for an unforgettable night of music and energy!",
+    bannerUrl: "/dts-assets/banners/20251018.png",
   },
   {
-    id: "p2",
-    date: "APRIL 21, 2024",
-    venue: "Cassiopeia",
-    location: "Berlin, Germany",
-    isSoldOut: true,
+    id: "20250809",
+    date: "AUG 09, 2025",
+    venue: "Underground Sounds",
+    location: "Lauf an der Pegnitz, DE",
+    isPast: true,
+    description: "",
+    bannerUrl: "/dts-assets/banners/20250809.jpg",
+  },
+  {
+    id: "20250628",
+    date: "JUN 28, 2025",
+    venue: "Rock Pod Kamenom",
+    location: "Snina, SK",
+    isPast: true,
+    description: `Hey Slovakia! @rockpodkamenom
+
+We are Drown The Sun from Nuremberg, Germany.
+
+This Saturday, we’re bringing you metalcore straight from our hometown.
+
+It’s a huge honor for us to play at your festival –
+and to share the stage with such amazing bands.
+
+We’re also really excited to finally see your beautiful country in person.
+
+Get ready. See you in the pit!`,
+    bannerUrl: "/dts-assets/banners/20250628.jpg",
   },
 ];
 
