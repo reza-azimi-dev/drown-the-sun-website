@@ -68,8 +68,8 @@ const HomePage = () => {
 
 
 
-            ): null
-                )}
+            ) : null
+          )}
         </div>
       </section>
 

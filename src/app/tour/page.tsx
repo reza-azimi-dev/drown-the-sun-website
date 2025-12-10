@@ -10,7 +10,7 @@ const TourPage = () => {
       <div className="relative h-[57vh] min-h-[400px] w-full overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/dts-assets/0568.jpeg"
+            src="/dts-assets/0568.JPEG"
             alt="Concert background"
             fill
             className="object-[50%_24%] object-cover opacity-60 "
