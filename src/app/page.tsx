@@ -1,18 +1,83 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import type { Metadata } from "next";
 import ShowCard from "@/components/ShowCard";
-import { RELEASES, socials, UPCOMING_SHOWS } from "@/constants";
 import ReleaseCard from "@/components/ReleaseCard";
+import { RELEASES, socials, UPCOMING_SHOWS } from "@/constants";
 
 
 
 
 
+export const metadata: Metadata = {
+  title: "Drown The Sun | Official Site",
+  description:
+    "Drown The Sun – official site for news, tour dates, music, and contact. Stream the latest releases and see upcoming shows.",
+  openGraph: {
+    title: "Drown The Sun | Official Site",
+    description:
+      "Drown The Sun – official site for news, tour dates, music, and contact. Stream the latest releases and see upcoming shows.",
+    url: "https://drown-the-sun.vercel.app",
+    siteName: "Drown The Sun",
+    images: [
+      {
+        url: "/dts-assets/0568.JPEG",
+        width: 1200,
+        height: 630,
+        alt: "Drown The Sun live",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Drown The Sun | Official Site",
+    description:
+      "Drown The Sun – official site for news, tour dates, music, and contact. Stream the latest releases and see upcoming shows.",
+    images: ["/dts-assets/0568.JPEG"],
+  },
+};
 
 const HomePage = () => {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    name: "Drown The Sun",
+    url: "https://drown-the-sun.vercel.app",
+    image: "/dts-assets/dts-logo.png",
+    sameAs: socials.map((s) => s.href),
+  };
+
+  const eventsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: UPCOMING_SHOWS.map((show, index) => ({
+      "@type": "MusicEvent",
+      position: index + 1,
+      name: `${show.venue} - ${show.location}`,
+      startDate: show.date,
+      location: {
+        "@type": "Place",
+        name: show.venue,
+        address: show.location,
+      },
+      image: show.bannerUrl,
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      eventStatus: show.isPast
+        ? "https://schema.org/EventScheduled"
+        : "https://schema.org/EventPostponed",
+    })),
+  };
+
   return (
     <div className="-mt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([orgJsonLd, eventsJsonLd]),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden">
         {/* Hero Content */}

@@ -47,7 +47,12 @@ const ShowCard: React.FC<ShowCardProps> = ({ show, isPast = false }) => {
         ) : (
           <div className="h-full w-full bg-black" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/95" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/95" />
+        <div className="pointer-events-none absolute inset-0 flex items-end justify-end p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div className="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/90 backdrop-blur-sm">
+            🔍 Preview
+          </div>
+        </div>
       </div>
 
       <div className="relative z-10 grid grid-cols-[auto,1fr] items-start gap-x-5 gap-y-3 px-5 py-6 md:grid-cols-[auto,1fr,auto] md:items-center md:gap-6 md:px-8 md:py-7">
@@ -97,7 +102,7 @@ const ShowCard: React.FC<ShowCardProps> = ({ show, isPast = false }) => {
                   <button
                     type="button"
                     onClick={() => setIsBannerModalOpen(true)}
-                    className="relative w-full bg-black min-h-[340px] md:w-[55%] md:flex-[0_0_55%] md:min-h-[620px]"
+                    className="group/banner relative w-full bg-black min-h-[340px] md:w-[55%] md:flex-[0_0_55%] md:min-h-[620px]"
                     aria-label="Open banner"
                   >
                     {bannerSrc ? (
@@ -112,6 +117,18 @@ const ShowCard: React.FC<ShowCardProps> = ({ show, isPast = false }) => {
                       <div className="h-full w-full bg-black" />
                     )}
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover/banner:opacity-100">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256.00098 256.00098"
+                        className="h-12 w-12 text-white/90"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        
+                      >
+                        <path d="M159.99707,116a12.00028,12.00028,0,0,1-12,12h-20v20a12,12,0,0,1-24,0V128h-20a12,12,0,0,1,0-24h20V84a12,12,0,0,1,24,0v20h20A12.00028,12.00028,0,0,1,159.99707,116Zm72.47949,116.48242a12.00033,12.00033,0,0,1-16.9707,0l-40.67871-40.67871a96.10513,96.10513,0,1,1,16.97168-16.96979l40.67773,40.6778A11.99973,11.99973,0,0,1,232.47656,232.48242ZM115.99707,187.99609a72,72,0,1,0-72-72A72.08124,72.08124,0,0,0,115.99707,187.99609Z" />
+                      </svg>
+                    </div>
                   </button>
 
                   <div className="flex flex-1 flex-col gap-5 overflow-y-auto p-6 md:w-[45%] md:p-8">
