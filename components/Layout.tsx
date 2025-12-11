@@ -86,9 +86,27 @@ const Navbar = () => {
             className="text-white transition-colors hover:text-primary md:hidden"
             aria-label={isOpen ? "Close navigation" : "Open navigation"}
           >
-            <span className="material-symbols-outlined text-3xl">
-              {isOpen ? "close" : "menu"}
-            </span>
+            {isOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-8 w-8"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M18.3 5.71a1 1 0 0 0-1.41-1.41L12 9.59 7.11 4.7A1 1 0 1 0 5.7 6.11L10.59 11l-4.9 4.89a1 1 0 1 0 1.41 1.42L12 12.41l4.89 4.9a1 1 0 0 0 1.42-1.42L13.41 11l4.89-4.89Z" />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-8 w-8"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M4 6.75A.75.75 0 0 1 4.75 6h14.5a.75.75 0 0 1 0 1.5H4.75A.75.75 0 0 1 4 6.75Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H4.75A.75.75 0 0 1 4 12Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H4.75A.75.75 0 0 1 4 17.25Z" />
+              </svg>
+            )}
           </button>
         </div>
       </div>
