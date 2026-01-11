@@ -32,11 +32,11 @@ const ContactPage = () => {
 
           <div className="mt-8 flex flex-col gap-4 text-white">
             <a
-              href="mailto:booking@drownthesun.com"
+              href="mailto:drown-the-sun@gmx.de"
               className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-lg font-semibold transition hover:border-primary hover:bg-primary/10"
             >
               <span className="text-sm font-bold uppercase tracking-[0.15em] text-primary">Email</span>
-              booking@drownthesun.com
+              drown-the-sun@gmx.de
             </a>
           </div>
 
