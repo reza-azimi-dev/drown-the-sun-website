@@ -37,11 +37,49 @@ export const socials = [
 
 export const UPCOMING_SHOWS: Show[] = [
   {
+    id: "20260426",
+    date: "APR 26, 2026",
+    venue: "Wassermühle Trittau",
+    location: "Hamburg, DE",
+    isPast: false,
+    description: `Drei Städte. Drei Spielarten. Ein Abend, der das alte Gebälk unserer Wassermühle auf den Prüfstand stellt.
+
+Mit WATAR (Kiel), SUBSTATION (Hamburg) und DROWN THE SUN (Nürnberg) versammelt METAL MÜHLE I drei Bands, die modernen Metal in all seinen Facetten ausloten – technisch versiert, stilistisch eigenständig und mit jener kompromisslosen Energie, die man sonst eher aus den Reviews einschlägiger Metal-Magazine kennt.
+
+WATAR liefern High-Gain Metal-Sound und Double-Bass-Massaker, verweben aber zugleich melodische Parts, schräge Gitarrensoli und orientalische Einflüsse in ihren progressiven Thrash Metal. Das Ergebnis: rasante Riffs, überraschende Wendungen und Moshpit-Garantie – präzise gespielt, aber nie verkopft.
+
+SUBSTATION stehen für modernen Metalcore zwischen gnadenlosen Breakdowns und eingängigen Singalongs. Ihre Songs transformieren Wut, Druck und Hoffnung in kollektive Energie – intensiv, emotional und live mit einer Präsenz, die den Raum sofort zusammenschweißt.
+
+DROWN THE SUN aus Nürnberg bewegen sich vom klassischen Metalcore hin zu einem düsteren, atmosphärischen Djent-Sound. Melodische, fast cineastische Passagen prallen auf unorthodoxe, groovegetriebene Rhythmen und polyrhythmische Präzision. Auf der Bühne entsteht daraus ein Sog aus Schwere, Atmosphäre und eruptiver Wucht – intensiv, modern und kompromisslos.
+
+METAL MÜHLE I ist kein Nostalgie-Abend, wir schaffen ein Statement: Heavy Metal lebt, entwickelt sich weiter und fordert Raum – laut, intensiv und kompromisslos.
+
+Tickets bei "der Buchladen" - Anja Wenck, Poststraße 31, 22946 Trittau 
+
+Tel: 04154/9892405 oder auf Eventfrog
+
+Rubrik
+Musik / Konzerte / Kabarett
+
+Veranstaltungsort
+Kulturzentrum Wassermühle Trittau
+Am Mühlenteich 3,
+22946 Trittau
+Veranstalter
+Kultur- und Förderverein Trittauer Wassermühle e.V.
+Kontaktdaten
+Homepage: www.kulturmuehle-trittau.de/`,
+    bannerUrl: "/dts-assets/banners/20260426.jpg",
+  },
+];
+
+export const PAST_SHOWS: Show[] = [
+  {
     id: "20260206",
     date: "FEB 06, 2026",
     venue: "Z-Bau Roter Salon",
     location: "Nürnberg, DE",
-    isPast: false,
+    isPast: true,
     description: `++++ FIRST SHOW OF THE 2026 ++++
 
       Wir haben die Ehre bei der "10+2 Years Anniversary Show" am 06.02.26 im @z.bau von @toryse_band dabei zu sein!
@@ -59,9 +97,6 @@ export const UPCOMING_SHOWS: Show[] = [
       Ticktes gibt es über Eventim.`,
     bannerUrl: "/dts-assets/banners/20260206.jpg",
   },
-];
-
-export const PAST_SHOWS: Show[] = [
   {
     id: "20251018",
     date: "OCT 18, 2025",
